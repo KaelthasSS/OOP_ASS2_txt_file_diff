@@ -1,17 +1,34 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace _14553038_OOP_ASS2_diff_txt
 {
     class Program
     {
-        //txt File Assignment
-        static string Txt1a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_1a.txt");
-        static string Txt1b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_1b.txt");
-        static string Txt2a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_2a.txt");
-        static string Txt2b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_2b.txt");
-        static string Txt3a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_3a.txt");
-        static string Txt3b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_3b.txt");
+        //Find txt file paths
+        static string Path1a = Path.Combine(Directory.GetCurrentDirectory(), "GitRepositories_1a.txt");
+        static string Path1b = Path.Combine(Directory.GetCurrentDirectory(), "GitRepositories_1b.txt");
+        static string Path2a = Path.Combine(Directory.GetCurrentDirectory(), "GitRepositories_2a.txt");
+        static string Path2b = Path.Combine(Directory.GetCurrentDirectory(), "GitRepositories_2b.txt");
+        static string Path3a = Path.Combine(Directory.GetCurrentDirectory(), "GitRepositories_3a.txt");
+        static string Path3b = Path.Combine(Directory.GetCurrentDirectory(), "GitRepositories_3b.txt");
+
+        //Append the txt files to arrays
+        static string[] Txt1a_Array = File.ReadAllLines(Path1a);
+        static string[] Txt1b_Array = File.ReadAllLines(Path1b);
+        static string[] Txt2a_Array = File.ReadAllLines(Path2a);
+        static string[] Txt2b_Array = File.ReadAllLines(Path2b);
+        static string[] Txt3a_Array = File.ReadAllLines(Path3a);
+        static string[] Txt3b_Array = File.ReadAllLines(Path3b);
+
+        //Convert each string arrays to only strings
+        static string Txt1a = string.Join(" ", Txt1a_Array);
+        static string Txt1b = string.Join(" ", Txt1b_Array);
+        static string Txt2a = string.Join(" ", Txt2a_Array);
+        static string Txt2b = string.Join(" ", Txt2b_Array);
+        static string Txt3a = string.Join(" ", Txt3a_Array);
+        static string Txt3b = string.Join(" ", Txt3b_Array);
 
         //Loop Boolean Assignment
         static bool loop = true;
