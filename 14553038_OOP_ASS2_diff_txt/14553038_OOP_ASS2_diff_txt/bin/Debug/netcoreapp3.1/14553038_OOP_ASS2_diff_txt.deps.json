@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "14553038_OOP_ASS2_diff_txt/1.0.0": {
+        "runtime": {
+          "14553038_OOP_ASS2_diff_txt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "14553038_OOP_ASS2_diff_txt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

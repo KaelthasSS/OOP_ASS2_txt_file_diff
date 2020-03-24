@@ -1,0 +1,11 @@
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\bin\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.exe
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\bin\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.deps.json
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\bin\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.runtimeconfig.json
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\bin\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.runtimeconfig.dev.json
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\bin\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.dll
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\bin\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.pdb
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.csprojAssemblyReference.cache
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.AssemblyInfoInputs.cache
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.AssemblyInfo.cs
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.dll
+C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\Debug\netcoreapp3.1\14553038_OOP_ASS2_diff_txt.pdb
