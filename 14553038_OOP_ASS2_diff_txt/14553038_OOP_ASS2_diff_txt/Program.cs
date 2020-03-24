@@ -6,15 +6,18 @@ namespace _14553038_OOP_ASS2_diff_txt
     class Program
     {
         //txt File Assignment
-        string txt1a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_1a.txt");
-        string txt1b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_1b.txt");
-        string txt2a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_2a.txt");
-        string txt2b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_2b.txt");
-        string txt3a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_3a.txt");
-        string txt3b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_3b.txt");
+        static string Txt1a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_1a.txt");
+        static string Txt1b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_1b.txt");
+        static string Txt2a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_2a.txt");
+        static string Txt2b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_2b.txt");
+        static string Txt3a = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_3a.txt");
+        static string Txt3b = File.ReadAllText(@"C:\Users\Meg\source\repos\14553038_OOP_ASS2_diff_txt\14553038_OOP_ASS2_diff_txt\obj\GitRepositories_3b.txt");
 
         //Loop Boolean Assignment
         static bool loop = true;
+
+        //Apendable string for more compact file comparison
+        static string Txt_1, Txt_2;
 
         //MAIN METHOD
         static void Main(string[] args)
@@ -56,13 +59,66 @@ namespace _14553038_OOP_ASS2_diff_txt
                         loop = false;
                     }
 
+                    //Append strings to additional variables
+                    //FirstFile
+                    if(FirstFile == 1)
+                    {
+                        Txt_1 = Txt1a;
+                    }
+                    else if(FirstFile == 2)
+                    {
+                        Txt_1 = Txt1b;
+                    }
+                    else if (FirstFile == 3)
+                    {
+                        Txt_1 = Txt2a;
+                    }
+                    else if (FirstFile == 4)
+                    {
+                        Txt_1 = Txt2b;
+                    }
+                    else if (FirstFile == 5)
+                    {
+                        Txt_1 = Txt3a;
+                    }
+                    else if (FirstFile == 6)
+                    {
+                        Txt_1 = Txt3b;
+                    }
+
+                    //SecondFile
+                    if (SecondFile == 1)
+                    {
+                        Txt_2 = Txt1a;
+                    }
+                    else if (SecondFile == 2)
+                    {
+                        Txt_2 = Txt1b;
+                    }
+                    else if (SecondFile == 3)
+                    {
+                        Txt_2 = Txt2a;
+                    }
+                    else if (SecondFile == 4)
+                    {
+                        Txt_2 = Txt2b;
+                    }
+                    else if (SecondFile == 5)
+                    {
+                        Txt_2 = Txt3a;
+                    }
+                    else if (SecondFile == 6)
+                    {
+                        Txt_2 = Txt3b;
+                    }
+
                     //Show user that their entered value was invalid
                     if (loop == true) Console.WriteLine("\nERROR: both entered values were not integers between 1 and 6\n____________________________________________________________\n");
 
                 } while (loop == true);
 
-                //Compare Files
-                if (FirstFile == SecondFile)
+                //Compare File strings
+                if (String.Equals(Txt_1, Txt_2))
                 {
                     Console.WriteLine("\nBoth files are the same!");
                 }
@@ -77,7 +133,7 @@ namespace _14553038_OOP_ASS2_diff_txt
                 Response = char.ToUpper(Response);
 
                 //Use loop Response
-                if (Response == 'N')
+                if (Response == 'N' || (Response != 'N' && Response != 'Y'))
                 {
                     Repeat = false;
                 }
